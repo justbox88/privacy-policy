@@ -1,0 +1,125 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Crypto Dashboard · Private Portfolio App</title>
+  <meta name="description" content="Crypto Dashboard — private, secure and fast crypto portfolio app for iPhone and iPad. All local, encrypted. No accounts, no tracking, no ads.">
+  <link rel="icon" href="data:,">
+  <style>
+    :root{
+      --bg:#0b1020; --fg:#e6e9ef; --muted:#97a0b3; --card:#121731; --line:#1f2a4a; --accent:#5ea0ff;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;height:100%;background:var(--bg);color:var(--fg);font:16px/1.6 Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial}
+    a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
+    .wrap{max-width:1040px;margin:0 auto;padding:28px 18px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:36px;height:36px;border-radius:10px;background:conic-gradient(from 180deg at 50% 50%, #1a5fff, #1dd7ff, #a7f3d0, #1a5fff);box-shadow:0 0 0 1px #294172 inset}
+    .title{font-weight:700;font-size:18px}
+    .hero{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;margin-top:34px}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px}
+    h1{font-size:40px;line-height:1.1;margin:0 0 10px}
+    h2{font-size:22px;margin:0 0 10px}
+    .sub{color:var(--muted);margin-top:6px}
+    .cta{display:flex;gap:12px;margin-top:18px;flex-wrap:wrap}
+    .btn{display:inline-flex;align-items:center;gap:10px;padding:12px 16px;border-radius:12px;border:1px solid var(--line);background:#162044}
+    .btn.primary{background:var(--accent);color:#071225;border-color:transparent;font-weight:700}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:22px}
+    .feature{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px}
+    .badge{display:inline-block;background:#0d1a36;border:1px solid var(--line);color:var(--muted);padding:2px 8px;border-radius:999px;font-size:12px;margin-left:8px}
+    .shots{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}
+    .shot{aspect-ratio:9/19;border-radius:16px;border:1px solid var(--line);background:linear-gradient(180deg,#0e152b,#0b1020);display:flex;align-items:center;justify-content:center;color:#5ea0ff;opacity:.9}
+    footer{margin:34px 0;color:var(--muted);font-size:14px}
+    .links a{margin-right:16px}
+    @media (max-width:960px){
+      .hero{grid-template-columns:1fr}
+      .grid{grid-template-columns:1fr}
+      h1{font-size:34px}
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"MobileApplication",
+    "name":"Crypto Dashboard",
+    "operatingSystem":"iOS",
+    "applicationCategory":"FinanceApplication",
+    "description":"Private, secure and fast crypto portfolio app. All local, encrypted. No accounts, no tracking, no ads.",
+    "offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},
+    "url":"https://justbox88.github.io/privacy-policy/"
+  }
+  </script>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <div class="title">Crypto Dashboard</div>
+        <span class="badge">iOS</span>
+      </div>
+      <nav class="links">
+        <a href="#features">Features</a>
+        <a href="#screens">Screenshots</a>
+        <a href="./support.html">Support</a>
+        <a href="./privacy.html">Privacy</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="card">
+        <h1>Private crypto portfolio — local & encrypted.</h1>
+        <p class="sub">All your wallets and accounts in one fast dashboard. No accounts, no tracking, no ads.</p>
+        <div class="cta">
+          <a class="btn primary" href="#" aria-label="Download on the App Store">Download on the App Store</a>
+          <a class="btn" href="#features">See features</a>
+        </div>
+        <div class="grid">
+          <div class="feature">
+            <h2>Portfolio control</h2>
+            <p>Unified view across wallets with live prices, charts and KPIs.</p>
+          </div>
+          <div class="feature">
+            <h2>Privacy-first</h2>
+            <p>Local storage only, full encryption. No third-party tracking.</p>
+          </div>
+          <div class="feature">
+            <h2>Pro tools</h2>
+            <p>FIFO holding period, Fibonacci levels, heatmap & bubble view.</p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <h2 id="screens">Screenshots</h2>
+        <div class="shots">
+          <div class="shot">Dashboard</div>
+          <div class="shot">Heatmap</div>
+          <div class="shot">Bubble View</div>
+          <div class="shot">Charts</div>
+        </div>
+        <p class="sub" style="margin-top:10px">Replace placeholders with your app images (1242×2688 or 1290×2796 recommended).</p>
+      </div>
+    </section>
+
+    <section id="features" class="card" style="margin-top:20px">
+      <h2>Everything you need</h2>
+      <ul>
+        <li>Connect and track all wallets & accounts in one app</li>
+        <li>Live prices, performance charts and coin details</li>
+        <li>Interactive heatmap & bubble view for quick insights</li>
+        <li>FIFO holding period detection for tax awareness</li>
+        <li>Fibonacci level calculations and trend markers</li>
+        <li>CSV import/export and full data portability</li>
+        <li>Works offline with last known data; no sign-up required</li>
+      </ul>
+    </section>
+
+    <footer>
+      <div>© 2025 Matthias Justiz · <a href="./support.html">Support</a> · <a href="./privacy.html">Privacy</a></div>
+    </footer>
+  </div>
+</body>
+</html>
