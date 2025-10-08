@@ -8,18 +8,17 @@
   <meta name="description" content="Crypto Dashboard — private, secure and fast crypto portfolio app for iPhone and iPad. All local, encrypted. No accounts, no tracking, no ads.">
   <link rel="icon" href="data:,">
   <style>
-    :root{
-      --bg:#0b1020; --fg:#e6e9ef; --muted:#97a0b3; --card:#121731; --line:#1f2a4a; --accent:#5ea0ff;
-    }
+    :root{ --bg:#0b1020; --fg:#e6e9ef; --muted:#97a0b3; --card:#121731; --line:#1f2a4a; --accent:#5ea0ff; }
     *{box-sizing:border-box}
     html,body{margin:0;height:100%;background:var(--bg);color:var(--fg);font:16px/1.6 Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial}
     a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
-    .wrap{max-width:1040px;margin:0 auto;padding:28px 18px}
+    .wrap{max-width:1100px;margin:0 auto;padding:28px 18px}
     header{display:flex;align-items:center;justify-content:space-between;gap:16px}
     .brand{display:flex;align-items:center;gap:12px}
     .logo{width:36px;height:36px;border-radius:10px;background:conic-gradient(from 180deg at 50% 50%, #1a5fff, #1dd7ff, #a7f3d0, #1a5fff);box-shadow:0 0 0 1px #294172 inset}
     .title{font-weight:700;font-size:18px}
-    .hero{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;margin-top:34px}
+    .badge{display:inline-block;background:#0d1a36;border:1px solid var(--line);color:var(--muted);padding:2px 8px;border-radius:999px;font-size:12px;margin-left:8px}
+    .hero{display:grid;grid-template-columns:1.2fr .8fr;gap:28px;margin-top:34px}
     .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px}
     h1{font-size:40px;line-height:1.1;margin:0 0 10px}
     h2{font-size:22px;margin:0 0 10px}
@@ -29,16 +28,10 @@
     .btn.primary{background:var(--accent);color:#071225;border-color:transparent;font-weight:700}
     .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:22px}
     .feature{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px}
-    .badge{display:inline-block;background:#0d1a36;border:1px solid var(--line);color:var(--muted);padding:2px 8px;border-radius:999px;font-size:12px;margin-left:8px}
     .shots{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}
-    .shot{aspect-ratio:9/19;border-radius:16px;border:1px solid var(--line);background:linear-gradient(180deg,#0e152b,#0b1020);display:flex;align-items:center;justify-content:center;color:#5ea0ff;opacity:.9}
+    .shots img{width:100%;border-radius:16px;border:1px solid var(--line);object-fit:cover}
+    .logos{color:var(--muted);font-size:14px;margin-top:8px}
     footer{margin:34px 0;color:var(--muted);font-size:14px}
-    .shot {
-  width: 100%;
-  border-radius: 16px;
-  border: 1px solid var(--line);
-  object-fit: cover;
-}
     .links a{margin-right:16px}
     @media (max-width:960px){
       .hero{grid-template-columns:1fr}
@@ -46,18 +39,6 @@
       h1{font-size:34px}
     }
   </style>
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"MobileApplication",
-    "name":"Crypto Dashboard",
-    "operatingSystem":"iOS",
-    "applicationCategory":"FinanceApplication",
-    "description":"Private, secure and fast crypto portfolio app. All local, encrypted. No accounts, no tracking, no ads.",
-    "offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},
-    "url":"https://justbox88.github.io/privacy-policy/"
-  }
-  </script>
 </head>
 <body>
   <div class="wrap">
@@ -101,13 +82,12 @@
       <div class="card">
         <h2 id="screens">Screenshots</h2>
         <div class="shots">
-          <img class="shot" src="https://github.com/justbox88/privacy-policy/blob/9b82e5858d099e1dd511062470b70161d1e24f8c/Simulator%20Screenshot%20-%20iPhone%2016%20Pro%20-%202025-10-08%20at%2000.09.24.jpg" alt="App Dashboard Screenshot">
-  <img class="shot" src="https://github.com/justbox88/privacy-policy/blob/9b82e5858d099e1dd511062470b70161d1e24f8c/Simulator%20Screenshot%20-%20iPhone%2016%20Pro%20-%202025-10-07%20at%2023.36.24.jpg" alt="Heatmap Screenshot">
-  <img class="shot" src="https://github.com/justbox88/privacy-policy/blob/9b82e5858d099e1dd511062470b70161d1e24f8c/Simulator%20Screenshot%20-%20iPhone%2016%20Pro%20-%202025-10-08%20at%2000.03.13.jpg" alt="Bubble View Screenshot">
-  <img class="shot" src="https://github.com/justbox88/privacy-policy/blob/9b82e5858d099e1dd511062470b70161d1e24f8c/Simulator%20Screenshot%20-%20iPhone%2016%20Pro%20-%202025-10-08%20at%2000.02.56.jpg" alt="Charts Screenshot">
-</div>
+          <img src="https://raw.githubusercontent.com/justbox88/privacy-policy/9b82e5858d099e1dd511062470b70161d1e24f8c/Simulator%20Screenshot%20-%20iPhone%2016%20Pro%20-%202025-10-08%20at%2000.02.56.jpg" alt="App Dashboard Screenshot">
+          <img src="https://raw.githubusercontent.com/justbox88/privacy-policy/975fe2ca0de6feac93686229619bea949cca4213/Simulator%20Screenshot%20-%20iPhone%2016%20Pro%20-%202025-10-08%20at%2000.09.24.jpg" alt="Heatmap Screenshot">
+          <img src="https://raw.githubusercontent.com/justbox88/privacy-policy/975fe2ca0de6feac93686229619bea949cca4213/Simulator%20Screenshot%20-%20iPhone%2016%20Pro%20-%202025-10-08%20at%2000.03.13.jpg" alt="Bubble View Screenshot">
+          <img src="https://raw.githubusercontent.com/justbox88/privacy-policy/975fe2ca0de6feac93686229619bea949cca4213/Simulator%20Screenshot%20-%20iPhone%2016%20Pro%20-%202025-10-07%20at%2023.36.24.jpg" alt="Charts Screenshot">
         </div>
-        <p class="sub" style="margin-top:10px">Replace placeholders with your app images (1242×2688 or 1290×2796 recommended).</p>
+        <div class="logos">Market data by third parties (e.g., CoinGecko, Yahoo Finance). No personal data is collected.</div>
       </div>
     </section>
 
